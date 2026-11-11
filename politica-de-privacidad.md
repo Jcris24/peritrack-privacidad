@@ -13,8 +13,9 @@ PeriTrack es una aplicación para Android que ayuda a las personas en diálisis 
 ## 1. Resumen
 
 * **Tus datos se guardan solo en tu teléfono.**
-* PeriTrack **no tiene servidores**, **no pide que crees una cuenta**, **no muestra anuncios** y **no recopila, vende ni comparte** tu información.
-* La información solo sale de tu teléfono cuando **tú decides compartir un PDF**.
+* PeriTrack **no tiene servidores**, **no pide que crees una cuenta**, **no muestra anuncios** y **no recopila, vende ni comparte** tus datos de salud.
+* Tus datos de salud solo salen de tu teléfono cuando **tú decides compartir un PDF**.
+* El componente de lectura con la cámara (ML Kit de Google) puede enviar a Google datos técnicos de diagnóstico, nunca tus registros ni tus fotos. Se explica en la sección 5.
 
 ## 2. Qué información maneja la aplicación
 
@@ -46,9 +47,11 @@ La aplicación no accede a tus contactos, tu ubicación ni tu micrófono, y no l
 
 El reconocimiento del texto de la imagen se hace **en tu teléfono** con ML Kit de Google, a través de Google Play Services. Es posible que Google Play Services descargue el modelo de reconocimiento la primera vez que se usa. La imagen no se envía a PeriTrack ni a ningún servidor.
 
+Según la documentación de ML Kit, este componente puede enviar a Google datos técnicos de diagnóstico y estadísticas de uso, como información del dispositivo y de la aplicación, identificadores del dispositivo, métricas de rendimiento y códigos de error. Estos datos **no incluyen** tus fotos, tus registros ni tus mediciones. Google los cifra al enviarlos y no los transfiere a terceros. PeriTrack no recibe esa información y no puede desactivarla. Puedes consultar los detalles en la [divulgación de datos de ML Kit](https://developers.google.com/ml-kit/android-data-disclosure).
+
 ## 6. Compartir información
 
-PeriTrack no comparte tu información con nadie. El único momento en que algo sale de tu teléfono es cuando **tú** generas un reporte en PDF y eliges compartirlo (por ejemplo, por WhatsApp o correo) o guardarlo. A partir de ese momento, el PDF queda bajo el control de la aplicación o persona con quien lo compartas. Piensa a quién se lo envías.
+PeriTrack no comparte tus datos de salud con nadie. Lo único que sale de tu teléfono por tu decisión es el reporte en PDF cuando **tú** lo generas y eliges compartirlo (por ejemplo, por WhatsApp o correo) o guardarlo. A partir de ese momento, el PDF queda bajo el control de la aplicación o persona con quien lo compartas. Piensa a quién se lo envías.
 
 ## 7. Respaldo de Android
 
